@@ -1,4 +1,5 @@
 export interface Supplier {
+  _id: string;
   name: string;
   logo?: string;
   state?: string;
@@ -6,4 +7,5 @@ export interface Supplier {
   minKwhLimit: number;
   customersCount: number;
   customersRatingAverage: number;
+  tags: string[];
 } 

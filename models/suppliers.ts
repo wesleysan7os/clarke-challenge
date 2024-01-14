@@ -28,4 +28,7 @@ const SupplierSchema = new Schema<Supplier>({
 	}
 });
 
-export default model<Supplier>('Supplier', SupplierSchema)
+const Supplier = models.Supplier || model('Supplier', SupplierSchema)
+
+export default Supplier;
+
